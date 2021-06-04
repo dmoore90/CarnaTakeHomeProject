@@ -109,10 +109,10 @@ describe('Admin Controller Tests adminlogin + users', () => {
         res.body.should.be.a('array');
         expect(res.headers['location']).to.equal('/users');
         if (res.body.length > 0) {
-          res.body[1].should.have.property('first_name');
-          res.body[1].should.have.property('last_name');
-          res.body[1].should.have.property('email');
-          res.body[1].should.have.property('username');
+          res.body[0].should.have.property('first_name');
+          res.body[0].should.have.property('last_name');
+          res.body[0].should.have.property('email');
+          res.body[0].should.have.property('username');
         }
         done();
       });
@@ -233,10 +233,10 @@ describe('Admin Controller Tests courses', () => {
         res.body.should.be.a('array');
         expect(res.headers['location']).to.equal('/courses');
         if (res.body.length > 0) {
-          res.body[1].should.have.property('course_name');
-          res.body[1].should.have.property('beginning_date');
-          res.body[1].should.have.property('ending_date');
-          res.body[1].should.have.property('instructor');
+          res.body[0].should.have.property('course_name');
+          res.body[0].should.have.property('beginning_date');
+          res.body[0].should.have.property('ending_date');
+          res.body[0].should.have.property('instructor');
         }
         done();
       });
@@ -352,8 +352,8 @@ describe('Admin Controller Tests enrollments', () => {
         res.body.should.be.a('array');
         expect(res.headers['location']).to.equal('/enrollments');
         if (res.body.length > 0) {
-          res.body[1].should.have.property('course_name');
-          res.body[1].should.have.property('username');
+          res.body[0].should.have.property('course_name');
+          res.body[0].should.have.property('username');
         }
         done();
       });
