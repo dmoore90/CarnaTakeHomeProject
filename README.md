@@ -10,16 +10,16 @@
 ### Getting Started
 This app requires NodeJS, ReactJS, MySQL database with database carna_db, user privileges for all and credentials 'user', 'pass'
 Clone this repository and install dependencies.
-- $ `git clone git@github.com:dmoore90/carna.git`
-- $ `cd carna/api`
+- $ `git@github.com:dmoore90/CarnaTakeHomeProject.git`
+- $ `cd CarnaTakeHomeProject/api`
 - $ `npm install`
 - $ `npx sequelize-cli db:migrate`
-- $ `cd carna/client`
+- $ `cd CarnaTakeHomeProject/client`
 - $ `npm install`
 ### Run client and api with nodemon
-- $ `cd carna/api`
+- $ `cd CarnaTakeHomeProject/api`
 - $ `npm start`
-- $ `cd carna/client`
+- $ `cd CarnaTakeHomeProject/client`
 - $ `npm start`
 ### Run Tests
 - $ `npm test`
